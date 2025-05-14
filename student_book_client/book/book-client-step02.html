@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>책 관리 시스템</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1{
+            color: #333;
+            text-align: center;
+        }
+
+        h2{
+            color: #444;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        form{
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        label{
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px; /* 입력 필드 안쪽에 8픽셀의 여백 추가 */
+            margin-bottom: 15px; /* 입력 필드 아래에 15픽셀의 외부 여백 추가 */
+            border: 1px solid #928989; /* 1픽셀 두께의 중간 회색 테두리 추가 */
+            border-radius: 3px;
+        }
+
+        button{
+            background-color: #007bff;
+            color: white; /* 버튼 텍스트 색상을 흰색으로 설정 */
+            padding: 10px 20px; /* 버튼 안쪽 여백: 위아래 10px, 좌우 20px */
+            border: none; /* 버튼의 기본 테두리 제거 */
+            border-radius: 3px; /* 버튼 모서리를 3픽셀만큼 둥글게 만듦 */
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #0056b3;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 5px; /* 테이블 모서리를 5픽셀만큼 둥글게 만듦 */
+            overflow: hidden;
+        }
+
+        th,td {
+        padding: 10px; /* 셀 내부에 10픽셀의 여백 추가 */
+        text-align: left; /* 셀 내용을 왼쪽으로 정렬 */
+        border-bottom: 1px solid #ddd; /* 셀 아래에 1픽셀 두께의 연한 회색 테두리 추가 */
+        }
+
+        th {
+        background-color: #f8f9fa; /* 헤더 배경색을 매우 연한 회색으로 설정 */
+        color: #333; /* 헤더 텍스트 색상을 진한 회색으로 설정 */
+        }
+
+        tr:hover{
+            background-color: #f5f5f5;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>책 관리 시스템</h1>
+
+    <div>
+      <h2>책 등록</h2>
+      <form>
+        <label for="title">제목:</label>
+        <input type="text" name="title" id="title" />
+
+        <label for="author">글쓴이:</label>
+        <input type="text" name="author" id="author" />
+
+        <label for="isbn">ISBN:</label>
+        <input type="text" name="isbn" id="isbn" />
+
+        <label for="price">가격:</label>
+        <input type="number" name="price" id="price" />
+
+        <label for="publishDate">출간일:</label>
+        <input type="date" name="publishDate" id="publishDate" />
+
+        <label for="description">요약:</label>
+        <input type="text" name="description" id="description" />
+
+        <label for="language">언어:</label>
+        <input type="text" name="language" id="language" />
+
+        <label for="pageCount">쪽 수:</label>
+        <input type="number" name="pageCount" id="pageCount" />
+
+        <label for="publisher">출판사:</label>
+        <input type="text" name="publisher" id="publisher" />
+
+        <label for="edition">판:</label>
+        <input type="text" name="edition" id="edition" />
+
+        <button type="submit">책 등록</button>
+      </form>
+    </div>
+
+    <div>
+      <h2>책 목록</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>제목</th>
+            <th>글쓴이</th>
+            <th>ISBN</th>
+            <th>가격</th>
+            <th>출간일</th>
+            <th>요약</th>
+            <th>언어</th>
+            <th>쪽 수</th>
+            <th>출판사</th>
+            <th>판</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </body>
+</html>
