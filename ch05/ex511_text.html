@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>문자관련 속성</title>
+    <style type="text/css">
+      h3 {
+        font-family: "맑은고딕" "돋움" san-serif;
+        color: red;
+        text-shadow: 3px 3px 4px grey;
+      }
+      h3:after {
+        content: " (♬sblim)";
+        font-size: 10pt;
+        text-shadow: 1px 1px 12px lime;
+      }
+      p {
+        font-family: "Times New Roman" "돋움" serif;
+        line-height: 10pt;
+      }
+      #first {
+        text-align: left;
+        letter-spacing: 2pt;
+        word-spacing: 8pt;
+      }
+      #second {
+        text-align: left;
+        text-indent: 2em;
+        letter-spacing: -2pt;
+        word-spacing: 2pt;
+      }
+      #third {
+        text-align: right;
+      }
+      #fourth {
+        text-align: center;
+      }
+      #under {
+        text-decoration: underline;
+      }
+      #over {
+        text-decoration: overline;
+      }
+      #thru {
+        text-decoration: line-through;
+      }
+      #cap {
+        text-transform: capitalize;
+      }
+      #upper {
+        text-transform: uppercase;
+      }
+      #lower {
+        text-transform: lowercase;
+      }
+    </style>
+  </head>
+  <body>
+    <h3><strong>CSS</strong> 문자관련 속성</h3>
+    <p id="first">왼쪽정렬, 문자간격 3pt, 단어간격 8pt</p>
+    <p id="second">왼쪽정렬, 들여쓰기 2글자, 문자간격 -2pt, 단어간격 2pt</p>
+    <p id="third">
+      오른쪽정렬, text-decoration : <span id="under"> underline </span>,
+      <span id="over"> overline </span>, <span id="thru"> line-through </span>
+    </p>
+    <p id="fourth">
+      가운데정렬, text-transform : <span id="cap"> capitalize </span>,
+      <span id="upper"> uppercase </span> , <span id="lower"> Lowercase </span>
+    </p>
+  </body>
+</html>

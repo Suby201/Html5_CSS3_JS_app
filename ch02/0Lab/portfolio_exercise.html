@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>홍길동의 포트폴리오</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        main {
+            flex: 3;
+            padding-right: 20px;
+        }
+        aside {
+            flex: 1;
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .project {
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            background-color: #ffffcc;
+            padding: 2px 5px;
+        }
+        .skill-name {
+            font-weight: bold;
+            color: #2980b9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 20px;
+        }
+        #profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            background-color: #bdc3c7;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>홍길동</h1>
+        <p>웹 개발자 / 프론트엔드 전문가</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">소개</a></li>
+            <li><a href="#skills">기술 스택</a></li>
+            <li><a href="#projects">프로젝트</a></li>
+            <li><a href="#contact">연락처</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <main>
+            <section id="about">
+                <h2>자기소개</h2>
+                <p>안녕하세요! 저는 <span class="highlight">사용자 중심의 웹 경험</span>을 만드는 것에 열정을 가진 웹 개발자입니다. <strong>HTML5</strong>, <strong>CSS3</strong>, <strong>JavaScript</strong>를 활용한 <em>반응형 웹 디자인</em>을 전문으로 합니다.</p>
+                <p>저는 <mark>지속적인 학습</mark>과 <mark>새로운 기술 탐구</mark>를 통해 항상 성장하고자 노력합니다.</p>
+            </section>
+            
+            <section id="skills">
+                <h2>기술 스택</h2>
+                <h3>프론트엔드 기술</h3>
+                <ul>
+                    <li><span class="skill-name">HTML5</span> - 시맨틱 마크업, 웹 접근성</li>
+                    <li><span class="skill-name">CSS3</span> - Flexbox, Grid, 애니메이션</li>
+                    <li><span class="skill-name">JavaScript</span> - ES6+, DOM 조작</li>
+                    <li><span class="skill-name">React</span> - 컴포넌트 기반 UI 개발</li>
+                </ul>
+                
+                <h3>백엔드 기술</h3>
+                <ol>
+                    <li><span class="skill-name">Node.js</span></li>
+                    <li><span class="skill-name">Express</span></li>
+                    <li><span class="skill-name">MongoDB</span></li>
+                </ol>
+                
+                <h3>기술 숙련도</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>기술</th>
+                            <th>숙련도</th>
+                            <th>경험(년)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML/CSS</td>
+                            <td>상급</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>중급</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>React</td>
+                            <td>중급</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Node.js</td>
+                            <td>초급</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">총 개발 경력</td>
+                            <td>5년</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            
+            <section id="projects">
+                <h2>프로젝트</h2>
+                
+                <article class="project">
+                    <h3>온라인 쇼핑몰</h3>
+                    <p>HTML5, CSS3, JavaScript를 활용한 반응형 쇼핑몰 웹사이트</p>
+                    <div>
+                        <span class="highlight">주요 기능:</span>
+                        <ul>
+                            <li>상품 검색 및 필터링</li>
+                            <li>장바구니 기능</li>
+                            <li>사용자 리뷰 시스템</li>
+                        </ul>
+                    </div>
+                </article>
+                
+                <article class="project">
+                    <h3>날씨 애플리케이션</h3>
+                    <p>JavaScript와 날씨 API를 활용한 실시간 날씨 정보 제공 앱</p>
+                    <div>
+                        <span class="highlight">주요 기능:</span>
+                        <ul>
+                            <li>위치 기반 날씨 정보</li>
+                            <li>5일 예보</li>
+                            <li>온도, 습도, 풍속 등 상세 정보</li>
+                        </ul>
+                    </div>
+                </article>
+                
+                <article class="project">
+                    <h3>할 일 관리 앱</h3>
+                    <p>React를 활용한 할 일 관리 웹 애플리케이션</p>
+                    <div>
+                        <span class="highlight">주요 기능:</span>
+                        <ul>
+                            <li>할 일 추가, 수정, 삭제</li>
+                            <li>카테고리별 분류</li>
+                            <li>완료된 항목 체크</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </main>
+        
+        <aside id="contact">
+            <div id="profile-pic">프로필 사진</div>
+            <h3>연락처 정보</h3>
+            
+            <dl>
+                <dt>이메일</dt>
+                <dd><strong>hong@example.com</strong></dd>
+                
+                <dt>전화번호</dt>
+                <dd>010-1234-5678</dd>
+                
+                <dt>소재지</dt>
+                <dd>서울특별시</dd>
+            </dl>
+            
+            <h4>소셜 미디어</h4>
+            <ul>
+                <li>GitHub</li>
+                <li>LinkedIn</li>
+                <li>Twitter</li>
+            </ul>
+            
+            <h4>자격증</h4>
+            <ul>
+                <li>정보처리기사</li>
+                <li>웹디자인기능사</li>
+                <li>SQLD</li>
+            </ul>
+        </aside>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 홍길동의 포트폴리오. 모든 권리 보유.</p>
+        <p><small>이 사이트는 HTML5와 CSS3로 제작되었습니다.</small></p>
+    </footer>
+</body>
+</html>

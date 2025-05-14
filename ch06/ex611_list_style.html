@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>목록에 스타일 지정</title>
+    <style type="text/css">
+      ol li {
+        list-style-type: upper-alpha;
+      }
+      li.usa {
+        list-style-type: disc;
+      }
+      li.kor {
+        list-style-type: circle;
+      }
+      li.renew {
+        list-style-type: square;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>과목별 추천도서 목록</h3>
+    <ol>
+      <li>멀티미디어 이해</li>
+      <ul>
+        <li class="kor">최윤철, 임순범 공저, 멀티미디어배움터 2.0</li>
+        <li class="usa">T.Vaughan, Multimedia: Making It Work, 7th Ed.</li>
+        <li class="usa">Z.Li and M.S.Drew, Fundamentals of Multimedia</li>
+      </ul>
+      <li>인터넷 개론</li>
+      <ul>
+        <li class="kor">최윤철, 임순범 공저, 인터넷배움터 2.0</li>
+        <li class="kor">임순범 외 공저, HTML5 웹 프로그래밍 입문</li>
+        <li class="renew">신규 추가 예정</li>
+      </ul>
+    </ol>
+  </body>
+</html>

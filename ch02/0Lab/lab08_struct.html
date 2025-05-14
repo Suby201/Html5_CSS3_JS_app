@@ -1,0 +1,85 @@
+<!--
+문서 구조화 (ex210_doc_struct.html 기반)
+연습문제 8: 다음 내용을 HTML5의 시맨틱 태그(<header>, <nav>, <section>, <article>, <aside>, <footer>)를 사용하여 구조화된 HTML 문서로 작성하시오.
+    웹사이트 제목: 프로그래밍 학습 센터
+
+    메뉴:
+    - 강좌 소개
+    - 수강 신청
+    - 자료실
+
+    사이드바:
+    - 관련 사이트
+    - 추천 도서
+    - 공지사항
+
+    본문:
+    제목: HTML5 입문
+    내용: HTML5는 최신 웹 표준으로, 다양한 멀티미디어와 그래픽을 지원합니다. 시맨틱 태그를 통해 문서 구조를 명확히 정의할 수 있으며, 반응형 웹 디자인에 적합합니다.
+
+    푸터:
+    © 2025 프로그래밍 학습 센터. 모든 권리 보유.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>프로그래밍 학습 센터</title>
+  <style>
+    header, nav, section, article, aside, footer {
+      border: 1px solid gray;
+      margin: 5px;
+      padding: 10px;
+    }
+    header, footer {
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+    nav, aside {
+      width: 20%;
+      float: left;
+    }
+    section {
+      width: 50%;
+      float: left;
+    }
+    footer {
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>프로그래밍 학습 센터</h1>
+  </header>
+  
+  <nav>
+    <h2>메뉴</h2>
+    <ul>
+      <li>강좌 소개</li>
+      <li>수강 신청</li>
+      <li>자료실</li>
+    </ul>
+  </nav>
+  
+  <section>
+    <article>
+      <h2>HTML5 입문</h2>
+      <p>HTML5는 최신 웹 표준으로, 다양한 멀티미디어와 그래픽을 지원합니다. 시맨틱 태그를 통해 문서 구조를 명확히 정의할 수 있으며, 반응형 웹 디자인에 적합합니다.</p>
+    </article>
+  </section>
+  
+  <aside>
+    <h2>사이드바</h2>
+    <ul>
+      <li>관련 사이트</li>
+      <li>추천 도서</li>
+      <li>공지사항</li>
+    </ul>
+  </aside>
+  
+  <footer>
+    © 2025 프로그래밍 학습 센터. 모든 권리 보유.
+  </footer>
+</body>
+</html>

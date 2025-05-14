@@ -1,0 +1,110 @@
+/* api.css - HTML 예제 파일들을 위한 스타일시트 */
+
+/* 기본 설정 */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 20px;
+    color: #333;
+}
+
+/* 제목 스타일 */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* 테이블 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+table[border="1"] {
+    border: 1px solid #ddd;
+}
+
+/* 표 캡션 스타일 */
+caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    text-align: left;
+}
+
+/* 표 헤더 스타일 */
+thead th {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+}
+
+/* 표 푸터 스타일 */
+tfoot th,
+tfoot td {
+    background-color: #ecf0f1;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-top: 2px solid #3498db;
+}
+
+/* 표 본문 스타일 */
+tbody th {
+    background-color: #f8f9fa;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    border-left: 3px solid #3498db;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+/* 셀 테두리 스타일 */
+td, th {
+    border: 1px solid #ddd;
+}
+
+/* 테이블 행 호버 효과 */
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* div와 span 영역 스타일 */
+div {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* 특정 스타일 강조 */
+span[style*="font-weight:bold"] {
+    font-size: 1.1em;
+}
+
+span[style*="font-style:italic"] {
+    margin-right: 5px;
+}
+
+/* 반응형 테이블 */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
+}

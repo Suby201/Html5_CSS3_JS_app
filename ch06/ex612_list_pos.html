@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>목록의 글머리 위치 지정</title>
+    <style type="text/css">
+      ul.outside-list {
+        list-style-position: outside;
+      }
+      ul.inside-list {
+        list-style-position: inside;
+      }
+      li.usa {
+        list-style-image: url("flag_usa.gif");
+      }
+      li.kor {
+        list-style-image: url("flag_kor.gif");
+      }
+      p {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>과목별 추천도서 목록</h3>
+    <ul class="outside-list">
+      <p>멀티미디어 이해</p>
+      <li class="kor">최윤철, 임순범 공저, 멀티미디어배움터 2.0</li>
+      <li class="usa">T.Vaughan, Multimedia: Making It Work, 7th Ed.</li>
+      <li class="usa">Z.Li and M.S.Drew, Fundamentals of Multimedia</li>
+    </ul>
+    <ul class="inside-list">
+      <p>인터넷 개론</p>
+      <li class="kor">최윤철, 임순범 공저, 인터넷배움터 2.0</li>
+      <li class="kor">임순범 외 공저, HTML5 웹 프로그래밍 입문</li>
+    </ul>
+  </body>
+</html>
