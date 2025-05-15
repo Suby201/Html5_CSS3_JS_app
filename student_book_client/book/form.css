@@ -1,73 +1,100 @@
-body{
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
             background-color: #f5f5f5;
         }
-        h1{
+        
+        h1 {
             color: #333;
             text-align: center;
+            margin-bottom: 30px;
         }
-
-        h2{
+        
+        h2 {
             color: #444;
-            border-bottom: 2px solid #007bff;
+            border-bottom: 2px solid #4CAF50;
             padding-bottom: 5px;
         }
-
-        form{
+        
+        form {
             background-color: white;
             padding: 20px;
-            border-radius: 15px;
+            border-radius: 8px;
             margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-
-        label{
+        
+        label {
             display: block;
             margin-bottom: 5px;
             color: #555;
+            font-weight: bold;
         }
-
+        
         input {
             width: 100%;
-            padding: 8px; /* 입력 필드 안쪽에 8픽셀의 여백 추가 */
-            margin-bottom: 15px; /* 입력 필드 아래에 15픽셀의 외부 여백 추가 */
-            border: 1px solid #928989; /* 1픽셀 두께의 중간 회색 테두리 추가 */
-            border-radius: 3px;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
         }
-
-        button{
-            background-color: #007bff;
-            color: white; /* 버튼 텍스트 색상을 흰색으로 설정 */
-            padding: 10px 20px; /* 버튼 안쪽 여백: 위아래 10px, 좌우 20px */
-            border: none; /* 버튼의 기본 테두리 제거 */
-            border-radius: 3px; /* 버튼 모서리를 3픽셀만큼 둥글게 만듦 */
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
             cursor: pointer;
         }
-
-        button:hover{
-            background-color: #0056b3;
+        
+        button:hover {
+            background-color: #45a049;
         }
-
-        table{
+        
+        table {
             width: 100%;
             border-collapse: collapse;
             background-color: white;
-            border-radius: 5px; /* 테이블 모서리를 5픽셀만큼 둥글게 만듦 */
+            border-radius: 8px;
             overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-
-        th,td {
-        padding: 10px; /* 셀 내부에 10픽셀의 여백 추가 */
-        text-align: left; /* 셀 내용을 왼쪽으로 정렬 */
-        border-bottom: 1px solid #ddd; /* 셀 아래에 1픽셀 두께의 연한 회색 테두리 추가 */
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
         }
-
+        
         th {
-        background-color: #f8f9fa; /* 헤더 배경색을 매우 연한 회색으로 설정 */
-        color: #333; /* 헤더 텍스트 색상을 진한 회색으로 설정 */
+            background-color: #f8f9fa;
+            color: #333;
+            font-weight: bold;
         }
-
-        tr:hover{
+        
+        tr:hover {
             background-color: #f5f5f5;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .form-group {
+            flex: 1;
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
         }
