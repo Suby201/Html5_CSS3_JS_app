@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>도서 관리 시스템</title>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form06.css">
 </head>
 <body>
     <h1>도서 관리 시스템</h1>
@@ -78,6 +78,15 @@
             </div>
             
             <button type="submit">도서 등록</button>
+            <button
+              type="button"
+              class="cancel-btn"
+              onclick="resetForm()"
+              style="display: none"
+            >
+              취소
+            </button>
+            <span class="error-message" id="formError"></span>
         </form>
     </div>
     
@@ -100,6 +109,6 @@
         </table>
     </div>
     
-    <script src="form.js"></script>
+    <script src="form06.js"></script>
 </body>
 </html>
